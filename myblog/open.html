@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+function openwindow(){
+	window.status="系统当前状态：您正在注册用户。。。";
+	if(window.screen.width==1024&&window.screen.height==768){
+		window.open("register.html");
+	}
+	else{
+		window.alert("请设置分辨率为1024×768，然后再打开！");
+	}
+}
+
+function closewindow(){
+	if(window.confirm("您确认要退出系统吗？")){
+		opener=null;
+		window.close();
+	}
+}
+</script>
+</head>
+
+<body>
+<table border="0" align="center" bgcolor="#ffffff">
+	<tr>
+    	<td><img src="4学习练习素材/任务1 制作弹出窗口特效/images/head.jpg" width="761" height="389" /></td>
+    </tr>
+    <tr>
+    	<td><img src="4学习练习素材/任务1 制作弹出窗口特效/images/foot.jpg" width="502" height="90" align="top" />
+        <input type="button" name="regButton" value="用户注册" onclick="openwindow()"/>
+        <input type="button" name="exitButton" value="退出" onclick="closewindow()"/>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
